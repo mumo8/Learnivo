@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/nav_group1">
+        <item android:icon="@drawable/premium_icon" android:id="@id/settings_upgrade_to_premium" android:title="@string/upgrade_to_premium" />
+        <item android:enabled="false" android:id="@id/settings_upgrade_to_premium_status" android:title="Status: Yearly plan Active" />
+    </group>
+    <group android:id="@id/nav_group2">
+        <item android:icon="@drawable/list_icon" android:id="@id/saved_text" android:title="@string/my_saved_texts" />
+    </group>
+    <group android:id="@id/nav_group3">
+        <item android:icon="@drawable/faq_icon" android:id="@id/settings_FAQ" android:title="@string/FAQ" />
+        <item android:icon="@drawable/share_icon" android:id="@id/settings_share_the_app" android:title="@string/share_the_app" />
+        <item android:icon="@drawable/rate_icon" android:id="@id/settings_rate_the_app" android:title="@string/settings_rate_the_app" />
+        <item android:icon="@drawable/contact_icon" android:id="@id/settings_contact_us" android:title="@string/contact_us" />
+    </group>
+    <group android:id="@id/nav_group4">
+        <item android:icon="@drawable/legal_icon" android:id="@id/settings_privacy_policy" android:title="@string/privacy_policy" />
+        <item android:icon="@drawable/legal_icon" android:id="@id/settings_tac" android:title="@string/terms_and_conditions" />
+    </group>
+</menu>

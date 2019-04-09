@@ -1,0 +1,44 @@
+[
+  {
+    "id": "p2p.serendi.me.p2p.videoad.1",
+    "type": "IAP_TYPE_VIDEO_AD",
+    "count": "1",
+    "name": "Free Export",
+    "description": "Play the ad and get a free export",
+    "button_title": "Watch ad!"
+  },
+  {
+    "id":"p2p.serendi.me.p2p.iap.referral.1",
+    "type":"IAP_TYPE_REFERRAL",
+    "count":"3",
+    "name":"Invite friends",
+    "description":"Get 3 free exports for every friend that installs the app"
+  },
+
+  {
+    "id":"p2p.serendi.me.p2p.iap.managed.daily.1",
+    "type":"IAP_TYPE_DURATION",
+    "duration":"86400000",
+    "offer":true
+
+  },
+  {
+    "id":"p2p.serendi.me.p2p.iap.managed.yearly.1",
+    "type":"IAP_TYPE_DURATION",
+    "duration":"31536000000",
+    "offer":true
+
+  },
+  {
+    "id":"p2p.serendi.me.p2p.iap.managed.unlimited",
+    "type":"IAP_TYPE_DURATION",
+    "duration":"1576800000000",
+    "name":"Lifetime plan",
+    "description":"Export texts for unlimited time",
+    "offer":true
+
+  }
+
+
+
+]

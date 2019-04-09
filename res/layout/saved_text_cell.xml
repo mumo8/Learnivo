@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+            <TextView android:id="@id/saved_text_title" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Text #1" android:layout_weight="7.0" />
+            <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:gravity="right" android:id="@id/saved_text_date" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Oct 16, 2018" android:layout_weight="2.0" android:textAlignment="textStart" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+            <TextView android:ellipsize="end" android:id="@id/saved_text_value" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Lorem ipsum" android:maxLines="1" android:layout_weight="7.0" />
+            <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:gravity="right" android:id="@id/saved_text_time" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="15:42" android:layout_weight="2.0" android:textAlignment="textStart" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

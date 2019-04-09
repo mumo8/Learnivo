@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/linearLayout" android:background="@color/colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:opencv="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/upload_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/full_camera_activity_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" opencv:layout_constraintBottom_toTopOf="@id/linearLayout2" opencv:layout_constraintEnd_toEndOf="parent" opencv:layout_constraintStart_toStartOf="parent" opencv:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="80.0dip" android:weightSum="7.0" opencv:layout_constraintBottom_toBottomOf="parent" opencv:layout_constraintEnd_toEndOf="parent" opencv:layout_constraintStart_toStartOf="parent" opencv:layout_constraintTop_toBottomOf="@id/camera_preview">
+            <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/capture_button" android:background="@android:color/transparent" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="centerInside" android:layout_weight="1.0" opencv:srcCompat="@drawable/camera_button" />
+            <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
