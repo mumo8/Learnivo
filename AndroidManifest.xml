@@ -8,14 +8,9 @@
     <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.back" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.back.autofocus" android:required="false"/>
-    <uses-permission android:name="com.android.vending.BILLING"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <permission android:name="p2p.serendi.me.p2p.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
-    <uses-permission android:name="p2p.serendi.me.p2p.permission.C2D_MESSAGE"/>
-    <application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:name="p2p.serendi.me.p2p.P2pApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/icon" android:supportsRtl="true" android:theme="@style/AppTheme">
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-        <activity android:label="@string/app_name" android:name="p2p.serendi.me.p2p.Activity.MainActivity" android:theme="@style/AppTheme.NoActionBar">
+    
+    
+        
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -27,29 +22,22 @@
                 <data android:host="example.com" android:scheme="https"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="p2p.serendi.me.p2p.Activity.CameraActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:label="@string/EditLinesHeader" android:name="p2p.serendi.me.p2p.Activity.EditLinesActivity"/>
-        <activity android:label="@string/my_saved_texts" android:name="p2p.serendi.me.p2p.Activity.RecognizedTextActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        
+        
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
         <activity android:label="@string/premium_label" android:name="p2p.serendi.me.p2p.Activity.PremiumPlansActivity"/>
-        <activity android:name="p2p.serendi.me.p2p.Activity.WebViewActivity"/>
-        <activity android:name="p2p.serendi.me.p2p.Activity.SavedActivity"/>
+        
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
-        <activity android:name="com.facebook.CustomTabMainActivity"/>
-        <activity android:name="com.facebook.CustomTabActivity"/>
+        
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <provider android:authorities="p2p.serendi.me.p2p.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        
         <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
         <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
-            </intent-filter>
+            
         </receiver>
-        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
-        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+        
+        
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <category android:name="p2p.serendi.me.p2p"/>
@@ -60,11 +48,10 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
-        <provider android:authorities="p2p.serendi.me.p2p.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <provider android:authorities="p2p.serendi.me.p2p.MarketingInitProvider" android:exported="false" android:name="com.facebook.marketing.internal.MarketingInitProvider"/>
-        <provider android:authorities="p2p.serendi.me.p2p.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        
         <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
             <intent-filter>
                 <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
